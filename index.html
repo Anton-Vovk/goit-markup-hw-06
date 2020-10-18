@@ -79,7 +79,7 @@
       <!-- ADVANTAGE -->
       <section class="advantage">
         <div class="container">
-          <h2 hidden>Приимущества</h2>
+          <h2 class="visually-hidden">Приимущества</h2>
           <ul class="advantage-list list">
             <li class="advantage-list-item">
               <h3 class="advantage-title">Внимание к деталям</h3>
@@ -453,6 +453,19 @@
               </li>
             </ul>
           </li>
+          <li class="subscribe">
+            <h3 class="footer-social-side-title">Подпишитесь на рассылку</h3>
+            <form action="#" class="form-subscribe"> 
+              <input class="input-form-subscribe" type="imail" name="user-imail" placeholder="E-mail" required >
+              <button type="submit" class="subscribe-btn ">
+                <span>Подписаться 
+                  <svg wigth="24px" height="24px" >
+                    <use href="./images/sprite.svg#telegram"></use>
+                  </svg>
+                </span>
+              </button>
+            </form>
+          </li>
         </ul>
       </div>
     </footer>
@@ -461,9 +474,44 @@
         <div class="modal">
           <button type="button" class="close-btn" data-modal-close> 
             <svg width="18px" height="18px">
-              <use href="./images/sprite-modal.svg#icon-btn-close"></use>
+              <use href="./images/sprite.svg#btn-close"></use>
             </svg>
           </button>
+          <h2 class="modal-form-title">Оставьте свои данные, мы вам перезвоним</h2>
+          <form action="#" class="modal-form">
+            <label class="modal-form-field">Имя
+              <span class="modal-form-field-wrapper">
+                <input type="text" name="user-name" class="modal-form-input" required>
+                <svg width="18px" height="18px" class="modal-form-svg-icon">
+                  <use href="./images/sprite.svg#person"></use>
+                </svg>
+              </span>
+            </label>
+            <label class="modal-form-field">Телефон
+              <span class="modal-form-field-wrapper">
+                <input type="tel" name="user-tel" class="modal-form-input" required>
+                <svg width="18px" height="18px" class="modal-form-svg-icon">
+                  <use href="./images/sprite.svg#phone"></use>
+                </svg>
+              </span>
+            </label>
+            <label class="modal-form-field">Телефон
+              <span class="modal-form-field-wrapper">
+                <input type="imail" name="user-imail" class="modal-form-input" required>
+                <svg width="18px" height="18px" class="modal-form-svg-icon">
+                  <use href="./images/sprite.svg#email"></use>
+                </svg>
+              </span>
+            </label>
+                    
+            <textarea name="user-message" id="" cols="30" rows="10" class="modal-form-message"></textarea>
+            <input type="checkbox" name="user-policy" value="accept-policy" id="check-policy"
+              class="modal-form-policy visually-hidden">
+            <label for="check-policy" class="modal-form-policy-label">
+            Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+            </label>
+            <button type="submit" class="modal-btn modal-form-btn">отправить</button>
+          </form>
         </div>
       </div>
     </div>
