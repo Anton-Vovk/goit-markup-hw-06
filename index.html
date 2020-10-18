@@ -479,7 +479,7 @@
           </button>
           <h2 class="modal-form-title">Оставьте свои данные, мы вам перезвоним</h2>
           <form action="#" class="modal-form">
-            <label class="modal-form-field">Имя
+            <label class="modal-form-field">Имя*
               <span class="modal-form-field-wrapper">
                 <input type="text" name="user-name" class="modal-form-input" required>
                 <svg width="18px" height="18px" class="modal-form-svg-icon">
@@ -487,7 +487,7 @@
                 </svg>
               </span>
             </label>
-            <label class="modal-form-field">Телефон
+            <label class="modal-form-field">Телефон*
               <span class="modal-form-field-wrapper">
                 <input type="tel" name="user-tel" class="modal-form-input" required>
                 <svg width="18px" height="18px" class="modal-form-svg-icon">
@@ -495,22 +495,26 @@
                 </svg>
               </span>
             </label>
-            <label class="modal-form-field">Почта
+            <label class="modal-form-field">Почта*
               <span class="modal-form-field-wrapper">
                 <input type="email" name="user-email" class="modal-form-input" required>
                 <svg width="18px" height="18px" class="modal-form-svg-icon">
                   <use href="./images/sprite.svg#email"></use>
                 </svg>
               </span>
-            </label>
-                    
+            </label>      
             <label class="modal-form-message-field" for="user-message"class="modal-form-field">Комментарий</label>
             <textarea name="user-message" class="modal-form-message" id="user-message" placeholder="Введите текст"></textarea>
             <input type="checkbox" name="user-policy" value="accept-policy" id="check-policy"
-              class="modal-form-policy visually-hidden">
+              class="modal-form-policy visually-hidden" >
+            <!-- <svg width="16px" height="16px" class="icon-form-check">
+              <use href="./images/sprite.svg#icon-check"></use>
+            </svg> -->
             <label for="check-policy" class="modal-form-policy-label">
-            Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+            Соглашаюсь с рассылкой и принимаю &nbsp<a href="#">Условия договора</a>
+            
             </label>
+            
             <button type="submit" class="modal-btn-send">отправить</button>
           </form>
         </div>
